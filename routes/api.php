@@ -32,4 +32,6 @@ Route::group(['middleware'=>['auth:sanctum']],function(){
     Route::get('current', [App\Http\Controllers\ApiController::class, 'current']);
     Route::post('logout', [App\Http\Controllers\ApiController::class, 'logout']);
     Route::get('index', [App\Http\Controllers\ApiController::class, 'index']);
+    Route::post('messages', [App\Http\Controllers\ApiController::class, 'messages']);
+    Route::post('send', [App\Http\Controllers\ApiController::class, 'send']);
 });

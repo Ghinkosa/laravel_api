@@ -25,11 +25,12 @@
             margin-left:55%;
         }
         .callme{
-         
+            background-image:linear-gradient(45deg,#524e88,#c631bb);
             border-bottom-right-radius:20px;
             padding-left:5px;
         }
         .callmeto{
+        background-image:linear-gradient(45deg,#f3c7f0,#d88397);
         padding-left:5px;
          border-bottom-left-radius:20px;
      }
@@ -52,7 +53,7 @@
                       @foreach($data as $value)
                       @if($value->id==Auth::user()->id)
                       @else
-                      <a class="nav-link btn btn-success text-light my-1 py-3" href="/display/{{$value->id}}"><div class="size">{{$value->name}}</div><div>Microsoft and our third-party vendors use cookies to s</div>  
+                      <a class="nav-link btn btn-primary text-light my-1 py-3" href="/display/{{$value->id}}"><div class="size">{{$value->name}}</div><div></div>  
                       </a>
                       @endif
                       @endforeach
@@ -61,13 +62,13 @@
             </div>
         </div>
     </div>
-      <div class="col-md-8 bg-secondary">
+      <div class="col-md-8 bg-success bg-opacity-50">
         <div class="long mt-2">
                       @foreach($total as $messag)
                             @if($messag->id1==Auth::user()->id)
-                             <h5 class="callmeto col-md-4 margin-le bg-white py-4 ">{{$messag->chats}}</h5>
+                             <h5 class="callmeto col-md-4 margin-le py-4 ">{{$messag->chats}}</h5>
                              @else
-                             <h5 class="ml-8 callme bg-info col-md-4 m-3 py-4">{{$messag->chats}}</h5>
+                             <h5 class="ml-8 callme col-md-4 m-3 py-4">{{$messag->chats}}</h5>
                              <div>{{$messag->created_at}}</div>
                              @endif
                       @endforeach

@@ -52,7 +52,7 @@
                       @foreach($data as $value)
                       @if($value->id==Auth::user()->id)
                       @else
-                      <a class="nav-link btn btn-success text-light my-1 py-3" href="display/{{$value->id}}"><div class="size">{{$value->name}}</div><div>Microsoft and our third-party vendors use cookies to s</div>  
+                      <a class="nav-link btn btn-primary text-light my-1 py-3" href="display/{{$value->id}}"><div class="size">{{$value->name}}</div><div></div>  
                       </a>
                       @endif
                       @endforeach

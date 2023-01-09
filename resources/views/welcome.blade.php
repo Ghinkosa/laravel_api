@@ -40,9 +40,9 @@
             @endif
                 <div class="container">
                     <h1 class="text-white ">Here is What We Offer</h1>
-                    <h4 class="text-white ">Cover is a one-page template for building simple and beautiful home</h4>
-                    <h4 class="text-white ">pages. Download, edit the text, and add your own fullscreen</h4>
-                    <h4 class="text-white ">background photo to make it your own.</h4>
+                    <h4 class="text-white ">Chat app which is built simple and beautiful home</h4>
+                    <h4 class="text-white ">It's loaded with features so you can communicate however you want.</h4>
+                    <h4 class="text-white ">whether message chat, or whatever</h4>
                     <div class="">
                        <button class="btn btn-light"><a href="/home" class="text-dark">getting started</a></button>
                     </div>
